@@ -12,6 +12,15 @@
   ],
   theme: {
     extend:{
+      width:{
+        "110%":"110%"
+      },
+      height:{
+        "110%":"110%"
+      },
+      colors:{
+        'primary':'#3ec890'
+      },
       keyframes:{
         bounce: {
           '0%, 100%': {

@@ -1,14 +1,14 @@
 import React from 'react';
 import styled from "styled-components";
-import Header from './components/Header.jsx';
+import Header2 from './components/Header2.jsx';
 import FlowText from './components/FlowText.jsx';
 
 
 function App() {
   return (
     <>
-    <Header />
-	<FlowText/>
+    <Header2/>
+	{/* <FlowText/> */}
     <div className="md:flex">
       <div className="md:flex-shrink-0">
         <div className="rounded-lg md:w-56">
