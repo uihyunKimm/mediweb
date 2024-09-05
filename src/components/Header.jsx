@@ -73,15 +73,15 @@ function Header() {
           {/* navwrapper */}
           <div className='-top-full left-0 fixed z-50 min-w-[1280px] w-full h-dvh text-white bg-black/10 backdrop-blur-sm'>
             <div className='absolute top-0 right-0 z-0 w-1/2 h-full active:-top-full'>
-              <div className='right-0 w-0 h-1/5 absolute active:w-full transition-[width] duration-600 ease-in-out delay-0 top-0
+              <div className='right-0 w-0 h-1/5 absolute active:w-full transition-[width] duration-700 ease-in-out delay-0 top-0
               before:block before:content-[""] before:absolute before:-top-[5%] before:-left-[5%] before:-z-1 before:h-110% before:w-110% bg-primary'></div>
-              <div className='right-0 w-0 h-1/5 absolute active:w-full transition-[width] duration-600 ease-in-out delay-100 top-1/5
+              <div className='right-0 w-0 h-1/5 absolute active:w-full transition-[width] duration-700 ease-in-out delay-100 top-1/5
               before:block before:content-[""] before:absolute before:-top-[5%] before:-left-[5%] before:-z-1 before:h-110% before:w-110% bg-primary'></div>
-              <div className='right-0 w-0 h-1/5 absolute active:w-full transition-[width] duration-600 ease-in-out delay-200 top-2/5
+              <div className='right-0 w-0 h-1/5 absolute active:w-full transition-[width] duration-700 ease-in-out delay-200 top-2/5
               before:block before:content-[""] before:absolute before:-top-[5%] before:-left-[5%] before:-z-1 before:h-110% before:w-110% bg-primary'></div>
-              <div className='right-0 w-0 h-1/5 absolute active:w-full transition-[width] duration-600 ease-in-out delay-300 top-3/5
+              <div className='right-0 w-0 h-1/5 absolute active:w-full transition-[width] duration-700 ease-in-out delay-300 top-3/5
               before:block before:content-[""] before:absolute before:-top-[5%] before:-left-[5%] before:-z-1 before:h-110% before:w-110% bg-primary'></div>
-              <div className='right-0 w-0 h-1/5 absolute active:w-full transition-[width] duration-600 ease-in-out delay-400 top-4/5
+              <div className='right-0 w-0 h-1/5 absolute active:w-full transition-[width] duration-700 ease-in-out delay-400 top-4/5
               before:block before:content-[""] before:absolute before:-top-[5%] before:-left-[5%] before:-z-1 before:h-110% before:w-110% bg-primary'></div>
             </div>
           </div>
