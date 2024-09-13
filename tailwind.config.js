@@ -43,7 +43,8 @@
         },
         animation:{
           'spin-slow': 'spin 3s linear infinite',
-          'flowtext': 'flowtext 12s linear infinite',        
+          'flowtext': 'flowtext 12s linear infinite',
+          'timer': '--progress stroke-dasharray: 125.6 stroke-dashoffset: calc(125.6px * (1 - var(--progress)))'        
         },
       },
     },
