@@ -13,14 +13,15 @@ import MainImage02 from '../image/MainImage02.jpg'
 import { flattenDiagnosticMessageText } from 'typescript';
 
 const options = {
+  responsiveWidth:      767,
   activeClass:          'active', // the class that is appended to the sections links
-  anchors:              ['One', 'Two', 'Three','four','five'], // the anchors for each sections
+  anchors:              ['', 'about', 'science','service','esg','contact'], // the anchors for each sections
   arrowNavigation:      false, // use arrow keys
   className:            'SectionContainer', // the class name for the section container
   delay:                1000, // the scroll animation speed
   navigation:           false, // use dots navigatio
   scrollBar:            false, // use the browser default scrollbar
-  sectionClassName:     'Section', // the section class name
+  sectionClassName:     'Section',/* fp-auto-height-responsive */ // the section class name
   sectionPaddingTop:    '0', // the section top padding
   sectionPaddingBottom: '0', // the section bottom padding
   verticalAlign:        false // align the content of each section vertical
@@ -39,9 +40,11 @@ const Main = () => {
       <Section>
         <Swiper
           spaceBetween={0}
+          loop={true}
           centeredSlides={true}
+          speed={1400}
           autoplay={{
-            delay: 6000,
+            delay: 4000,
             disableOnInteraction: flattenDiagnosticMessageText,
           }}
           /* pagination={{
@@ -59,6 +62,9 @@ const Main = () => {
           </SwiperSlide>
           <SwiperSlide>
             <img src={MainImage01} alt="Main02" className='block w-full h-full object-cover brightness-50'/>
+          </SwiperSlide>
+          <SwiperSlide>
+            <img src={MainImage02} alt="Main02" className='block w-full h-full object-cover brightness-50'/>
           </SwiperSlide>
           <SwiperSlide>
             <img src={MainImage02} alt="Main02" className='block w-full h-full object-cover brightness-50'/>
