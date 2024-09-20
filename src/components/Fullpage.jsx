@@ -5,6 +5,7 @@ import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/css';
 import 'swiper/css/pagination';
 import 'swiper/css/navigation';
+import 'swiper/css/hash-navigation';
 // import required modules
 import { Autoplay, Pagination, Navigation } from 'swiper/modules';
 
@@ -21,7 +22,7 @@ const options = {
   delay:                1000, // the scroll animation speed
   navigation:           false, // use dots navigatio
   scrollBar:            false, // use the browser default scrollbar
-  sectionClassName:     'Section',/* fp-auto-height-responsive */ // the section class name
+  sectionClassName:     'Section',/* fp-auto-height-responsive */ // the section class name w-screen h-screen max-xsm:h-[370px] max-xsm:w-auto max-ssm:h-[400px] max-ssm:w-auto max-md:h-[500px] max-md:w-auto
   sectionPaddingTop:    '0', // the section top padding
   sectionPaddingBottom: '0', // the section bottom padding
   verticalAlign:        false // align the content of each section vertical
@@ -37,25 +38,24 @@ const Main = () => {
   };
   return (
     <SectionsContainer {...options}>
-      <Section>
+      <Section className="w-screen h-screen max-xsm:h-[370px] max-xsm:w-auto max-ssm:h-[400px] max-ssm:w-auto max-md:h-[500px] max-md:w-auto">
         <Swiper
+          modules={[Autoplay, Pagination, Navigation]}
           spaceBetween={0}
+          /* slidesPerView={1} */
           loop={true}
+          navigation
           centeredSlides={true}
           speed={1400}
           autoplay={{
             delay: 4000,
             disableOnInteraction: flattenDiagnosticMessageText,
           }}
-          /* pagination={{
-            clickable: true,
-          }} */
-          navigation={true}
-          modules={[Autoplay, Pagination, Navigation]}
           className="w-full h-full"
         >
-          <SwiperSlide className='flex justify-center items-center'>
-            <img src={MainImage01} alt="Main01" className='block w-full h-full object-cover brightness-50'/>
+          <div className='border-box absolute flex top-1/2 justify-center align-middle text-white z-50 px-12 w-1/2 h-10'>어쩌구</div>
+          <SwiperSlide>
+            <img src={MainImage01} alt="Main01" className='block w-full h-full object-cover brightness-50 -z-10'/>
           </SwiperSlide>
           <SwiperSlide>
             <img src={MainImage02} alt="Main02" className='block w-full h-full object-cover brightness-50'/>

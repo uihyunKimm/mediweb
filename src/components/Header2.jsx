@@ -39,6 +39,9 @@ const menuItems = [
     ]
   }
 ];
+
+
+
 // NavButton 컴포넌트: 메뉴 버튼을 담당합니다.
 const NavButton = ({ active, onClick }) => {
   return (
@@ -124,14 +127,14 @@ const Header = () => {
   return (
     <header className='box-border block top-auto fixed w-full z-20 text-base '>
       <div className='block '> {/* wrapper */}
-        <div className='block relative items-center w-full h-20 p-[0.12%] xl:p-[0.5%] group-hover:bg-white'>
+        <div className='block relative items-center w-full h-20 p-[0.12%] xl:p-[0.5%]'>
           {/* logo */}
           <div className='absolute top-1/2 left-52 z-50 -translate-y-1/2 w-40 h-7 max-xl:left-6 transition-all duration-300 ease-in-out'>
             <a href="/"><img src={Logo} alt="logo" /></a>
           </div>
 
           {/* 상단메뉴 */}
-          <ul className='block absolute left-1/2 top-1/2 w-max m-0 p-0 -translate-y-1/2 -translate-x-1/2 list-none max-lg:hidden text-white group hover:bg-white'>
+          <ul id="headerhover" className='block absolute left-1/2 top-1/2 w-max m-0 p-0 -translate-y-1/2 -translate-x-1/2 list-none max-lg:hidden text-white group hover:bg-white'>
             {menuItems.map((item, index) => (
               <li key={index} className='relative float-left py-0 px-9 leading-[4.5rem]'>
                 <a href={`#${item.title}`} className='block'>{item.title}</a>
