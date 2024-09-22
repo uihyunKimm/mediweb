@@ -93,7 +93,7 @@ const NavMenu = ({ active }) => {
       <ul className='block absolute z-2 left-[55%] top-[19%] m-0 p-0 list-none text-white max-xl:w-full'>
         {menuItems.map((item, index) => (
           <li key={index} className='overflow-hidden list-item group'>
-            <a href={`#${item.title}`} className={`inline-block text-7xl max-xl:text-4xl max-xl:leading-relaxed  uppercase tracking-tight leading-snug transition-transform duration-[800ms] ease-in-out ${active ? ' translate-y-0 delay-[500ms]' : 'translate-y-full'}`}>
+            <a href={`#${item.title}`} className={`inline-block font- text-8xl max-2xl:text-7xl max-2xl:leading-relaxed max-xl:text-6xl max-xl:leading-relaxed max-md:text-4xl max-md:leading-relaxed uppercase tracking-tight leading-snug transition-transform duration-[800ms] ease-in-out ${active ? ' translate-y-0 delay-[500ms]' : 'translate-y-full'}`}>
               <span className='group-hover:block group-hover:transition-all group-hover:duration-500 group-hover:delay-300 group-hover:ease-in-out group-hover:content-[""] group-hover:translate-x-20 group-hover:max-xl:translate-x-10'>
                 {/* <em className='block content-[""] absolute left-0 top-1/2 z-10 w-16 h-1.5 origin-right bg-white scale-x-0 duration-300 ease-in-out
                 before:w-1.5 before:h-10 before:origin-[0%_100%] before:-rotate-90 before:content-[""] before:absolute before:-right-1 before:bottom-0 before:transition-transform before:bg-white before:duration-500 before:z-20
@@ -106,7 +106,7 @@ const NavMenu = ({ active }) => {
           </li>
         ))}
       </ul>
-      <p className='block absolute left-[55%] bottom-10 z-10 font-medium text-base leading-5 m-0 p-0 break-all'>(c) KUH responsive design</p>
+      <p className={`block  absolute left-[55%] bottom-12 z-10 font-light text-lg max-xl:text-base max-sm:text-sm leading-5 m-0 p-0 break-all transition-opacity duration-1000 ease-in delay-[1000ms] ${active ? 'animate-fadein' : 'hidden'}`}>(c) KUH responsive design</p>
     </div>
   );
 };

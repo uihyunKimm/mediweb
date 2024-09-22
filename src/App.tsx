@@ -35,11 +35,7 @@ function App() {
 	    <div className="flex gap-10 flex-col md:flex-row m-auto md:m-0">
 <<<<<<< HEAD
 		{/* 	      <img src="https://avatars.githubusercontent.com/u/117346967?v=4" alt="프로필" className="w-48 aspect-square">*/}
-		<div>
-=======
-	      <img src="https://avatars.githubusercontent.com/u/117346967?v=4" alt="프로필" className="w-48 aspect-square">
-      <div>
->>>>>>> 8430b1e5387dc118a31d1369ed0c438c3d0a7a37
+		{/* <div>
 	        <h1 className="text-4xl text-[#EFA43D] md:mt-10">Gyuri Kim </h1>
 	        <p className="text-gray-500 mt-2">Frontend developer</p>
 	      </div>
@@ -101,8 +97,7 @@ function App() {
 	        </div>
 	
 	      </div>
-	    </div>
-	  </div> */}
+	    </div> */}
     </>
   );
 }
