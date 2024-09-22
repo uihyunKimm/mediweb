@@ -30,8 +30,8 @@ function App() {
     </div>
     <div className="flex flex-col bg-white p-5 flex-wrap gap-10">
 	    <div className="flex gap-10 flex-col md:flex-row m-auto md:m-0">
-{/* 	      <img src="https://avatars.githubusercontent.com/u/117346967?v=4" alt="프로필" className="w-48 aspect-square">
- */}	      <div>
+		{/* 	      <img src="https://avatars.githubusercontent.com/u/117346967?v=4" alt="프로필" className="w-48 aspect-square">*/}
+		<div>
 	        <h1 className="text-4xl text-[#EFA43D] md:mt-10">Gyuri Kim </h1>
 	        <p className="text-gray-500 mt-2">Frontend developer</p>
 	      </div>
