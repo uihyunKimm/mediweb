@@ -1,6 +1,8 @@
 import React from 'react';
+import ReactDOM from 'react-dom'
 import styled from "styled-components";
 import Header2 from './components/Header2.jsx';
+import Fullpage from './components/Fullpage.jsx';
 import FlowText from './components/FlowText.jsx';
 
 
@@ -8,8 +10,9 @@ function App() {
   return (
     <>
     <Header2/>
+	<Fullpage/>
 	{/* <FlowText/> */}
-    <div className="md:flex">
+    {/* <div className="md:flex">
       <div className="md:flex-shrink-0">
         <div className="rounded-lg md:w-56">
         </div>
@@ -30,8 +33,13 @@ function App() {
     </div>
     <div className="flex flex-col bg-white p-5 flex-wrap gap-10">
 	    <div className="flex gap-10 flex-col md:flex-row m-auto md:m-0">
+<<<<<<< HEAD
 		{/* 	      <img src="https://avatars.githubusercontent.com/u/117346967?v=4" alt="프로필" className="w-48 aspect-square">*/}
 		<div>
+=======
+	      <img src="https://avatars.githubusercontent.com/u/117346967?v=4" alt="프로필" className="w-48 aspect-square">
+      <div>
+>>>>>>> 8430b1e5387dc118a31d1369ed0c438c3d0a7a37
 	        <h1 className="text-4xl text-[#EFA43D] md:mt-10">Gyuri Kim </h1>
 	        <p className="text-gray-500 mt-2">Frontend developer</p>
 	      </div>
@@ -94,7 +102,7 @@ function App() {
 	
 	      </div>
 	    </div>
-	  </div>
+	  </div> */}
     </>
   );
 }

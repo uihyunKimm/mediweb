@@ -7,6 +7,25 @@
         clip-path: polygon(0 100%, 100% 100%, 100% 0, 0 0);
     }
  }
+
+ .swiper-button-prev {
+  @apply flex px-[5%] text-white;
+}
+.swiper-button-next {
+  @apply flex px-[5%] text-white;
+}
+
+.swiper-button-prev::after,
+.swiper-button-next::after {
+  @apply opacity-30 text-white font-thin;
+}
+
+.swiper-pagination-bullet {
+  @apply bg-slate-300;
+}
+.swiper-pagination-bullet-active {
+  @apply text-white via-white from-white ring-white caret-white fill-white accent-white;
+}
 /* @layer utilities {
     * {   --tw-clip-polygon: var(--tw-clip-polygon-a), var(--tw-clip-polygon-b), var(--tw-clip-polygon-c), var(--tw-clip-polygon-d);
     --tw-clip-polygon-a: 0 0;

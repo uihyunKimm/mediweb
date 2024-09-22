@@ -11,6 +11,28 @@
     "./src/**/*.{js,ts,jsx,tsx,mdx}",
   ],
   theme: {
+    screens: {
+      'xsm': '380px',
+      // => @media (min-width: 380px) { ... }
+
+      'ssm': '480px',
+      // => @media (min-width: 480px) { ... }
+
+      'sm': '640px',
+      // => @media (min-width: 640px) { ... }
+
+      'md': '768px',
+      // => @media (min-width: 768px) { ... }
+
+      'lg': '1024px',
+      // => @media (min-width: 1024px) { ... }
+
+      'xl': '1280px',
+      // => @media (min-width: 1280px) { ... }
+
+      '2xl': '1536px',
+      // => @media (min-width: 1536px) { ... }
+    },
     extend:{
       width:{
         "110%":"110%"
@@ -43,7 +65,8 @@
         },
         animation:{
           'spin-slow': 'spin 3s linear infinite',
-          'flowtext': 'flowtext 12s linear infinite',        
+          'flowtext': 'flowtext 12s linear infinite',
+          'timer': '--progress stroke-dasharray: 125.6 stroke-dashoffset: calc(125.6px * (1 - var(--progress)))'        
         },
       },
     },
